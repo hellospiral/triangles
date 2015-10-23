@@ -32,13 +32,13 @@ $(document).ready(function() {
     var sideC = parseInt($("input#sideC").val());
       
     if (equilateral) {
-        $(".equilateral").show();
+        $(".triangle-type").text("equilateral");
     } 
     if (isosceles) {
-        $(".isosceles").show();
+        $(".triangle-type").text("isosceles");
     }
     if (scalene) {
-        $(".scalene").show();
+        $(".triangle-type").text("scalene");
     }
     $("#result").show();
     event.preventDefault();
